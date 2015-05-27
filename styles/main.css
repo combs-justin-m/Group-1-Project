@@ -15,3 +15,15 @@ html {
   clear: both;
   content: "";
   display: table; }
+
+.box {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+
+.box:last-child {
+  margin-right: 0; }
+
+h3 {
+  border-bottom: 30px; }
