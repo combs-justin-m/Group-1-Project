@@ -1,1 +1,1 @@
-## I am a Readme.... you should probably update me!
+## Group 1 - Restaurant website mockup
