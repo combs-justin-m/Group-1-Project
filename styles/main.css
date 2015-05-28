@@ -73,11 +73,9 @@ html {
   width: 55%; }
 
 #menu {
-  z-index: 10;
   margin: 20px 0;
   height: 400px;
-  width: 100%;
-  background-color: red; }
+  width: 100%; }
 
 #reservation {
   position: absolute;
@@ -128,4 +126,3 @@ html {
 #reservation #reserveTable:hover {
   background-color: black;
   color: white; }
-
