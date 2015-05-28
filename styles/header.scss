@@ -1,0 +1,41 @@
+header {
+  border-bottom: 1px solid black;
+}
+
+h1 {
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+.socialMedia {
+  display: inline-block;
+  text-align: center;
+  float: right;
+}
+
+.socialMedia li {
+  float: left;
+}
+
+.facebook {
+  width: 20px;
+  height: 20px;
+}
+
+.twitter {
+  width: 20px;
+  height: 20px;
+}
+
+.instagram {
+  width: 20px;
+  height: 20px;
+}
+
+footer {
+  border-top: 1px solid black;
+  font-size: .8em;
+}
