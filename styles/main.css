@@ -37,13 +37,13 @@ html {
 .box3 h3 {
   border-bottom: 1px solid gray; }
 
-.menu {
+.menus {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 74.41059%; }
 
-.menu:last-child {
+.menus:last-child {
   margin-right: 0; }
 
 .buttonRow {

@@ -59,7 +59,7 @@ tempor incididunt ut labore et dolore.</p>
 
     </section>
 
-    <section class="menu">
+    <section class="menus">
       <div class="buttonRow">
         <button class="menuButton" id="storyBtn">Our Story</button>
         <button class="menuButton activeButton" id="menuBtn">Menu</button>
@@ -86,7 +86,13 @@ tempor incididunt ut labore et dolore.</p>
       </div>
 
       <div id="menu" class="menuSection">
+        <ul class="menuList">
 
+          <script type="text/template" id="menuData">
+            <li><u><%= item %></u><br><%= description %><br> $ <%= price %></li>
+          </script>
+
+        </ul>
       </div>
 
     </section>
