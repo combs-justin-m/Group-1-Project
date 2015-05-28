@@ -47,6 +47,10 @@ html {
 .hideMenu {
   visibility: hidden; }
 
+#story {
+  position: absolute;
+  width: 55%; }
+
 #menu {
   z-index: 10;
   margin: 20px 0;
