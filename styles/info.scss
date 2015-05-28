@@ -3,19 +3,14 @@
   border: 1px solid gray;
   background-color: light gray;
   padding: 11px;
+  overflow: auto;
+
+  h3 {
+    border-bottom: 1px solid gray;
+  }
 }
 
-
-
-
-.box1 h3 {
-   border-bottom: 1px solid gray;
+.box3 span {
+  text-align: center;
 }
 
-.box2 h3 {
-  border-bottom: 1px solid gray;
-}
-
-.box3 h3 {
-  border-bottom: 1px solid gray;
-}
