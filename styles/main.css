@@ -47,6 +47,7 @@ html {
   margin-right: 0; }
 
 .buttonRow {
+  position: relative;
   width: 100%;
   height: 60px;
   margin: 40px 0;
@@ -64,13 +65,20 @@ html {
   border: 1px solid lightgray;
   border-bottom: 1px solid white; }
 
+.hideMenu {
+  visibility: hidden; }
+
+#story {
+  position: absolute;
+  width: 55%; }
+
 #menu {
   margin: 20px 0;
   height: 400px;
-  width: 100%;
-  background-color: red; }
+  width: 100%; }
 
 #reservation {
+  position: absolute;
   margin: 20px 0; }
 
 #reservation input {
