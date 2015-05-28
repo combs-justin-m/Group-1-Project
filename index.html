@@ -60,7 +60,29 @@ tempor incididunt ut labore et dolore.</p>
     </section>
 
     <section class="menu">
+      <div class="buttonRow">
+        <button class="menuButton">Our Story</button>
+        <button class="menuButton">Menu</button>
+        <button class="menuButton activeButton">Reservations</button>
+      </div>
 
+      <div id="menu">
+
+      </div>
+
+      <div id="reservation">
+        <form id="reservationForm">
+          <p>Full Name</p><input type="text" id="fullName" placeholder="Ex: John Smith">
+          <p>Number Of Guests</p><input type="text" id="numGuests" placeholder="Ex: 5">
+          <p>Date</p><input type="date">
+          <p>Special Notes</p><textarea cols="50" rows="5"></textarea>
+          <select>
+            <option>Indoors</option>
+            <option>Outdoors</option>
+          </select>
+          <input type="submit" value="Reserve Table" id="reserveTable">
+        </form>
+      </div>
     </section>
 
     <aside class="foodPics">
