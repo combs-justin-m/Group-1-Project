@@ -26,10 +26,91 @@
     <div class="jumbotron"></div>
 
     <section class="info">
+      <div class="infoContainer">
+
+  <div class="box box1">
+    <h3>Latest News</h3>
+
+     <h4>Lorem ipsum dolor sit amet</h4>
+     <h4>June 7th</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla.....read more></p>
+  </div>
+
+  <div class="box box2">
+    <h3>Today's Special</h3>
+
+    <img src="http://lorempixel.com/280/100">
+
+    <h4>Lorem ipsum dolor sit amet.............27</h4>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore.</p>
+
+  </div>
+
+  <div class="box box3">
+    <h3>Our Location</h3>
+
+    <div id="map-canvas">
+      <iframe
+        width="280"
+        height="100"
+        frameborder="0" style="border:0"
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA6kZ0g05c2rxrR7MkAufFZbRCxBYOBfjs
+        &q=The+Iron+Yard+Atlanta+GA
+        &attribution_source=Google+Maps+Embed+API
+        &attribution_ios_deep_link_id=comgooglemaps://?daddr=The+Iron+Yard+Atlanta+GA">
+      </iframe>
+    </div>
+
+    <span id="streetaddress">115 M.L.K. Jr Dr NW, Atlanta, GA 30303<span>
+    <span id="phone">404-123-4567</span>
+    <a href="https://www.google.com/maps/place/115+Martin+Luther+King+Junior+Drive+Northwest,+Atlanta,+GA+30303">Map</a>
+    <a href="https://www.google.com/maps/dir/Current+Location/115+Martin+Luther+King+Junior+Drive+Northwest,+Atlanta,+GA+30303">Directions</a>
+
+  <div></div>
+
+
+  </div>
+  </div>
+
+
 
     </section>
 
     <section class="menu">
+      <div class="buttonRow">
+        <button class="menuButton" id="storyBtn">Our Story</button>
+        <button class="menuButton activeButton" id="menuBtn">Menu</button>
+        <button class="menuButton" id="reserveBtn">Reservations</button>
+      </div>
+      <div id="reservation" class="menuSection hideMenu">
+        <form id="reservationForm">
+          <p>Full Name</p><input type="text" id="fullName" placeholder="Ex: John Smith">
+          <p>Number Of Guests</p><input type="text" id="numGuests" placeholder="Ex: 5">
+          <p>Date</p><input type="date">
+          <p>Special Notes</p><textarea cols="50" rows="5"></textarea>
+          <select>
+            <option>Indoors</option>
+            <option>Outdoors</option>
+          </select>
+          <input type="submit" value="Reserve Table" id="reserveTable">
+        </form>
+      </div>
+
+      <div id="story" class="menuSection hideMenu">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum deleniti aliquam, minus sapiente quibusdam dicta, dignissimos doloribus beatae recusandae cum natus soluta eligendi nam veritatis officiis. Nisi magni, quod velit.lorem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum deleniti aliquam, minus sapiente quibusdam dicta, dignissimos doloribus beatae recusandae cum natus soluta eligendi nam veritatis officiis. Nisi magni, quod velit.lorem</p>
+        <img src="http://lorempixel.com/g/600/200/" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum deleniti aliquam, minus sapiente quibusdam dicta, dignissimos doloribus beatae recusandae cum natus soluta eligendi nam veritatis officiis. Nisi magni, quod velit.lorem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum deleniti aliquam, minus sapiente quibusdam dicta, dignissimos doloribus beatae recusandae cum natus soluta eligendi nam veritatis officiis. Nisi magni, quod velit.lorem</p>
+      </div>
+
+      <div id="menu" class="menuSection">
+
+      </div>
 
     </section>
 
@@ -45,7 +126,9 @@
 
   <script src="scripts/vendor/jquery.min.js"></script>
   <script src="scripts/vendor/underscore.min.js"></script>
+  <script src="scripts/menu.js"></script>
   <script src="scripts/main.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
 
 </body>
 </html>
