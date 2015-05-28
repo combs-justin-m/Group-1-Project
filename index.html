@@ -23,16 +23,11 @@
 
     <section class="menu">
       <div class="buttonRow">
-        <button class="menuButton">Our Story</button>
-        <button class="menuButton">Menu</button>
-        <button class="menuButton activeButton">Reservations</button>
+        <button class="menuButton" id="storyBtn">Our Story</button>
+        <button class="menuButton" id="menuBtn">Menu</button>
+        <button class="menuButton activeButton" id="reserveBtn">Reservations</button>
       </div>
-
-      <div id="menu">
-
-      </div>
-
-      <div id="reservation">
+      <div id="reservation" class="menuSection">
         <form id="reservationForm">
           <p>Full Name</p><input type="text" id="fullName" placeholder="Ex: John Smith">
           <p>Number Of Guests</p><input type="text" id="numGuests" placeholder="Ex: 5">
@@ -45,6 +40,15 @@
           <input type="submit" value="Reserve Table" id="reserveTable">
         </form>
       </div>
+
+      <div id="story" class="menuSection">
+
+      </div>
+
+      <div id="menu" class="menuSection hideMenu">
+
+      </div>
+
     </section>
 
     <aside class="foodPics">
