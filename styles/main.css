@@ -39,9 +39,15 @@ html {
   border: 1px solid white;
   border-bottom: 1px solid lightgray; }
 
-.activeMenu {
+.activeButton {
   border: 1px solid lightgray;
   border-bottom: 1px solid white; }
+
+#menu {
+  margin: 20px 0;
+  height: 400px;
+  width: 100%;
+  background-color: red; }
 
 #reservation {
   margin: 20px 0; }
