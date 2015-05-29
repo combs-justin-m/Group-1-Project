@@ -11,10 +11,10 @@ html {
   margin-left: auto;
   margin-right: auto; }
 
-  .bodyContainer::after {
-    clear: both;
-    content: "";
-    display: table; }
+.bodyContainer::after {
+  clear: both;
+  content: "";
+  display: table; }
 
 header {
   border-bottom: 1px solid black; }
@@ -45,10 +45,6 @@ li {
   width: 20px;
   height: 20px; }
 
-footer {
-  border-top: 1px solid black;
-  font-size: .8em; }
-
 .box {
   float: left;
   display: block;
@@ -58,12 +54,11 @@ footer {
   background-color: lightgray;
   padding: 11px; }
 
-  .box:last-child {
-    margin-right: 0; }
+.box:last-child {
+  margin-right: 0; }
 
 .news {
   border-bottom: 1px solid gray; }
-
 
 .special {
   border-bottom: 1px solid gray; }
@@ -105,7 +100,7 @@ footer {
   padding-top: 14px;
   margin-left: 10px; }
 
-.menu {
+.menus {
   float: left;
   display: block;
   margin-right: 2.35765%;
@@ -142,7 +137,7 @@ footer {
 
 #menu {
   margin: 20px 0;
-  height: 400px;
+  clear: both;
   width: 100%; }
 
 #reservation {
@@ -213,3 +208,10 @@ footer {
   display: inline-block;
   float: right;
   margin: 0; }
+
+footer {
+  border-top: 1px solid black;
+  font-size: .8em;
+  height: 50px;
+  line-height: 50px;
+  clear: both; }
