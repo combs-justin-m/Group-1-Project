@@ -48,10 +48,6 @@ li {
   width: 20px;
   height: 20px; }
 
-footer {
-  border-top: 1px solid black;
-  font-size: .8em; }
-
 .box {
   float: left;
   display: block;
@@ -67,9 +63,6 @@ footer {
 .box:last-child {
   margin-right: 0; }
 
-.box h3 {
-  border-bottom: 1px solid gray; }
-
 #newsContainer p {
   display: block;
   display: -webkit-box;
@@ -82,9 +75,6 @@ footer {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis; }
-
-.box3 span {
-  text-align: center; }
 
 .menus {
   float: left;
@@ -123,7 +113,7 @@ footer {
 
 #menu {
   margin: 20px 0;
-  height: 400px;
+  clear: both;
   width: 100%; }
 
 #reservation {
@@ -176,12 +166,19 @@ footer {
   background-color: black;
   color: white; }
 
+.itemBorder {
+  border-bottom: 1px dotted black; }
+
 .item {
-  float: left;
-  border-bottom: 1px solid bottom; }
+  display: inline-block;
+  margin: 0; }
 
 .description {
-  clear: both; }
+  clear: both;
+  width: 80%;
+  font-size: 12px;
+  height: 80px;
+  border-right: 1px solid lightgray; }
 
 .price {
   float: right; }
@@ -197,3 +194,10 @@ footer {
 
 .foodPics:last-child {
   margin-right: 0; }
+
+footer {
+  border-top: 1px solid black;
+  font-size: .8em;
+  height: 50px;
+  line-height: 50px;
+  clear: both; }

@@ -24,7 +24,6 @@
     <div class="jumbotron"></div>
 
     <section class="info">
-
       <ul class="box latestNews">
         <h3>Latest News</h3>
 
@@ -65,7 +64,6 @@
         <a href="https://www.google.com/maps/place/115+Martin+Luther+King+Junior+Drive+Northwest,+Atlanta,+GA+30303">Map</a>
         <a href="https://www.google.com/maps/dir/Current+Location/115+Martin+Luther+King+Junior+Drive+Northwest,+Atlanta,+GA+30303">Directions</a>
       </ul>
-
     </section>
 
     <section class="menus">
@@ -98,7 +96,7 @@
 
         <script type="text/template" id="menuContainerData">
           <div class="menuContainer">
-            <h3> <%= title %> </h3>
+            <h3> <%= title.toUpperCase()%> </h3>
             <ul class="menuList"></ul>
           </div>
         </script>
@@ -106,16 +104,16 @@
         <script type="text/template" id="menuData">
           <li>
             <div class="itemBorder">
-              <p class="price">$<%= price %></p>
               <p class="item"><%= item %></p>
+              <p class="price">$<%= price %></p>
             </div>
-            <p class="description"><%= description %></p>
+            <div>
+              <p class="description"><%= description %></p>
+            </div>
           </li>
         </script>
 
-
       </div>
-
     </section>
 
     <aside class="foodPics">
