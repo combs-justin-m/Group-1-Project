@@ -109,13 +109,25 @@
       </div>
 
       <div id="menu" class="menuSection">
-        <ul class="menuList">
 
-          <script type="text/template" id="menuData">
-            <li><u><%= item %></u><br><%= description %><br> $ <%= price %></li>
-          </script>
+        <script type="text/template" id="menuContainerData">
+          <div class="menuContainer">
+            <h3> <%= title %> </h3>
+            <ul class="menuList"></ul>
+          </div>
+        </script>
 
-        </ul>
+        <script type="text/template" id="menuData">
+          <li>
+            <div class="itemBorder">
+              <p class="price">$<%= price %></p>
+              <p class="item"><%= item %></p>
+            </div>
+            <p class="description"><%= description %></p>
+          </li>
+        </script>
+
+
       </div>
 
     </section>

@@ -18,16 +18,24 @@ $('#reserveTable').on('click', function (){
 });
 
 // Menu-1 data //
-var menuString, menuFunc;
+var menuString, menuFunc, menuContainerString, menuContainerFunc;
 
 $.getJSON('http://private-anon-f64b0c0cc-restaurantapi.apiary-mock.com/menu-1', function(data){
 
+menuContainerString = $('#menuContainerData').html()
 menuString = $('#menuData').html();
+
+menuContainerFunc = _.template(menuContainerString);
 menuFunc = _.template(menuString);
 
-  _.each(data, function (arr){
+  _.each(data, function (arr, key){
+
+    var $menuContainer = $(menuContainerFunc({title: key}));
+
     _.each(arr, function(a){
-      $('.menuList').append(menuFunc(a));
-    })
+      $menuContainer.find('.menuList').append(menuFunc(a));
+    });
+
+    $('#menu').append($menuContainer);
   });
 });
