@@ -11,10 +11,10 @@ html {
   margin-left: auto;
   margin-right: auto; }
 
-.bodyContainer::after {
-  clear: both;
-  content: "";
-  display: table; }
+  .bodyContainer::after {
+    clear: both;
+    content: "";
+    display: table; }
 
 header {
   border-bottom: 1px solid black; }
@@ -55,22 +55,57 @@ footer {
   margin-right: 2.35765%;
   width: 31.76157%;
   border: 1px solid gray;
-  background-color: light gray;
+  background-color: lightgray;
   padding: 11px; }
 
-.box:last-child {
-  margin-right: 0; }
+  .box:last-child {
+    margin-right: 0; }
+
+.news {
+  border-bottom: 1px solid gray; }
+
+
+.special {
+  border-bottom: 1px solid gray; }
+
+.location {
+  border-bottom: 1px solid gray; }
 
 .box1 h3 {
-  border-bottom: 1px solid gray; }
+  margin-left: 10px; }
+
+.box1 p {
+  margin-left: 10px; }
 
 .box2 h3 {
-  border-bottom: 1px solid gray; }
+  margin-left: 10px; }
+
+.box2 p {
+  margin-left: 10px; }
 
 .box3 h3 {
-  border-bottom: 1px solid gray; }
+  margin-left: 10px; }
 
-.menus {
+.box1 h4 {
+  display: inline-block;
+  padding-top: 12px;
+  margin-left: 10px; }
+
+.box2 h4 {
+  margin-left: 10px; }
+
+.date {
+  float: right; }
+
+.box2 img {
+  padding-top: 14px;
+  margin-left: 10px; }
+
+.box3 img {
+  padding-top: 14px;
+  margin-left: 10px; }
+
+.menu {
   float: left;
   display: block;
   margin-right: 2.35765%;

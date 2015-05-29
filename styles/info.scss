@@ -1,21 +1,61 @@
 .box {
   @include span-columns(4);
   border: 1px solid gray;
-  background-color: light gray;
+  background-color: lightgray;
   padding: 11px;
 }
 
 
+.news {
+  border-bottom: 1px solid gray;
+}
 
+.special {
+  border-bottom: 1px solid gray;
+}
+
+.location {
+  border-bottom: 1px solid gray;
+}
 
 .box1 h3 {
-   border-bottom: 1px solid gray;
+   margin-left: 10px;
+}
+.box1 p {
+   margin-left: 10px;
 }
 
 .box2 h3 {
-  border-bottom: 1px solid gray;
+  margin-left: 10px;
+}
+.box2 p {
+  margin-left: 10px;
 }
 
 .box3 h3 {
-  border-bottom: 1px solid gray;
+  margin-left: 10px;
 }
+
+.box1 h4 {
+  display: inline-block;
+  padding-top: 12px;
+  margin-left: 10px;
+}
+
+.box2 h4 {
+  margin-left: 10px;
+}
+
+.date {
+  float: right;
+}
+
+.box2 img {
+  padding-top: 14px;
+  margin-left: 10px;
+}
+.box3 img {
+  padding-top: 14px;
+  margin-left: 10px;
+}
+
