@@ -103,18 +103,24 @@
 }
 
 .itemBorder {
-
+  border-bottom: 1px dotted black;
 }
 
 .item {
-  float: left;
-  border-bottom: 1px solid bottom;
+  display: inline-block;
+  margin: 0;
 }
 
 .description {
   clear: both;
+  width: 80%;
+  font-size: 12px;
+  height: 80px;
+  border-right: 1px solid lightgray;
 }
 
 .price {
+  display: inline-block;
   float: right;
+  margin: 0;
 }
