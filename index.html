@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Project Name</title>
+  <title>The Ginger Monk</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/vendor/normalize.css">
   <link rel="stylesheet" href="styles/main.css">
@@ -11,78 +11,60 @@
   <div class="bodyContainer">
 
     <header>
-      <h1>Logo</h1>
+      <img src="images/noun_41281_cc.svg" class="monkLogo">
+      <h1>The Ginger Monk</h1>
       <div class="socialMedia">
         <ul>Follow Us!</ul>
-        <li><img src='images/noun_40254_cc.svg' class= facebook></li>
-        <li><a href='https://www.facebook.com/'>FaceBook</a>/</li>
-        <li><img src='images/noun_20940.svg' class= twitter></li>
-        <li><a href='https://twitter.com/'>Twitter</a>/</li>
-        <li><img src='images/noun_38846_cc.svg' class= instagram></li>
-        <li><a href='https://instagram.com/'>Instagram</a></li>
+        <li><a href='https://www.facebook.com/'><img src='images/noun_40254_cc.svg' class= "facebook">Facebook</a>/</li>
+        <li><a href='https://twitter.com/'><img src='images/noun_20940.svg' class="twitter">Twitter</a>/</li>
+        <li><a href='https://instagram.com/'><img src='images/noun_38846_cc.svg' class= "instagram">Instagram</a></li>
       </div>
     </header>
 
     <div class="jumbotron"></div>
 
     <section class="info">
-      <div class="infoContainer">
 
-        <div class="box box1">
-          <!-- <h3>Latest News</h3>
+      <ul class="box latestNews">
+        <h3>Latest News</h3>
 
-          <h4>Lorem ipsum dolor sit amet</h4>
-          <h4>June 7th</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla.....read more></p> -->
+        <div id="newsContainer"></div>
+          <script type="text/template" id="news">
+            <span><b><%= title %></span></b> <span><b><%= date_published %></span></b>
+            <p> <%= post %></p>
+          </script>
+      </ul>
 
-          <div id="newsContainer"></div>
-            <script type="text/template" id="news">
-              <span><%= title %> <%= date_published %></span>
-              <p> <%= post %></p>
-            </script>
-          </div>
+      <ul class="box todaysSpecial">
+        <h3>Today's Special</h3>
 
-        <div class="box box2">
-          <h3>Today's Special</h3>
+        <img src="http://lorempixel.com/280/100">
 
-          <img src="http://lorempixel.com/280/100">
+        <div id="dailySpecContainer"></div>
+          <script type="text/template" id="dailySpecial">
+            <span><b><%= item %></b></span> <span><%= price %></span>
+            <span><%= description %></span>
+          </script>
+      </ul>
 
-<!--           <h4>Lorem ipsum dolor sit amet.............27</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore.</p> -->
+      <ul class="box ourLocation">
+        <h3>Our Location</h3>
 
-          <div id="dailySpecContainer"></div>
-            <script type="text/template" id="dailySpecial">
-              <span><b><%= item %></b></span> <span><%= price %></span>
-              <span><%= description %></span>
-            </script>
-          </div>
+        <iframe
+          width="280"
+          height="100"
+          frameborder="0" style="border:0"
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA6kZ0g05c2rxrR7MkAufFZbRCxBYOBfjs
+          &q=The+Iron+Yard+Atlanta+GA
+          &attribution_source=Google+Maps+Embed+API
+          &attribution_ios_deep_link_id=comgooglemaps://?daddr=The+Iron+Yard+Atlanta+GA">
+        </iframe>
 
-        <div class="box box3">
-          <h3>Our Location</h3>
-
-          <div id="map-canvas">
-            <iframe
-              width="280"
-              height="100"
-              frameborder="0" style="border:0"
-              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA6kZ0g05c2rxrR7MkAufFZbRCxBYOBfjs
-              &q=The+Iron+Yard+Atlanta+GA
-              &attribution_source=Google+Maps+Embed+API
-              &attribution_ios_deep_link_id=comgooglemaps://?daddr=The+Iron+Yard+Atlanta+GA">
-            </iframe>
-          </div>
-
-          <span id="streetaddress">115 M.L.K. Jr Dr NW, Atlanta, GA 30303</span>
-          <span id="phone">404-123-4567</span>
-          <a href="https://www.google.com/maps/place/115+Martin+Luther+King+Junior+Drive+Northwest,+Atlanta,+GA+30303">Map</a>
-          <a href="https://www.google.com/maps/dir/Current+Location/115+Martin+Luther+King+Junior+Drive+Northwest,+Atlanta,+GA+30303">Directions</a>
-
-        </div>
+        <span id="streetaddress">115 M.L.K. Jr Dr NW, Atlanta, GA 30303</span>
+        <span id="phone">404-123-4567</span>
+        <a href="https://www.google.com/maps/place/115+Martin+Luther+King+Junior+Drive+Northwest,+Atlanta,+GA+30303">Map</a>
+        <a href="https://www.google.com/maps/dir/Current+Location/115+Martin+Luther+King+Junior+Drive+Northwest,+Atlanta,+GA+30303">Directions</a>
+      </ul>
 
     </section>
 
@@ -154,6 +136,7 @@
   <script src="scripts/vendor/jquery.min.js"></script>
   <script src="scripts/vendor/underscore.min.js"></script>
   <script src="scripts/menu.js"></script>
+  <script src="scripts/info.js"></script>
   <script src="scripts/main.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js"></script>
 
