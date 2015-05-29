@@ -142,7 +142,7 @@ li {
 
 #reservation {
   position: absolute;
-  margin: 20px 0; }
+  margin: 0; }
 
 #reservation input {
   display: block;
@@ -195,19 +195,48 @@ li {
 
 .item {
   display: inline-block;
-  margin: 0; }
+  margin: 10px 0 0; }
 
 .description {
   clear: both;
+  font-size: 13px;
+  padding-right: 20px;
   width: 80%;
-  font-size: 12px;
-  height: 80px;
+  height: 45px;
+  float: left;
   border-right: 1px solid lightgray; }
 
 .price {
   display: inline-block;
   float: right;
   margin: 0; }
+
+.itemInfoContainer {
+  display: inline-block;
+  width: 100%; }
+
+.itemInfoRow {
+  line-height: 70px;
+  padding: 0; }
+
+.itemInfoRow li {
+  float: left;
+  margin: 0 0 0 10px; }
+
+.allergies, .favorite, .spicy, .vegan {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  background-color: red; }
+
+.favorite {
+  background-color: yellow; }
+
+.spicy {
+  background-color: orange; }
+
+.vegan {
+  background-color: black; }
 
 footer {
   border-top: 1px solid black;

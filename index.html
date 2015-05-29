@@ -121,8 +121,14 @@
               <p class="item"><%= item %></p>
               <p class="price">$<%= price %></p>
             </div>
-            <div>
+            <div class="itemInfoContainer">
               <p class="description"><%= description %></p>
+              <ul class="itemInfoRow">
+                <li class="itemInfo allergies"> <%= allergies %> </li>
+                <li class="itemInfo favorite"> <%= favorite %> </li>
+                <li class="itemInfo spicy"> <%= spicy %> </li>
+                <li class="itemInfo vegan"> <%= vegan %> </li>
+              <ul>
             </div>
           </li>
         </script>
