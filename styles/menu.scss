@@ -1,4 +1,4 @@
-.menu {
+.menus {
   @include span-columns(9);
 }
 
@@ -102,3 +102,19 @@
   }
 }
 
+.itemBorder {
+
+}
+
+.item {
+  float: left;
+  border-bottom: 1px solid bottom;
+}
+
+.description {
+  clear: both;
+}
+
+.price {
+  float: right;
+}

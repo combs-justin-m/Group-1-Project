@@ -10,12 +10,11 @@ html {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
+
   .bodyContainer::after {
     clear: both;
     content: "";
     display: table; }
-<<<<<<< HEAD
-=======
 
 header {
   border-bottom: 1px solid black; }
@@ -49,7 +48,6 @@ li {
 footer {
   border-top: 1px solid black;
   font-size: .8em; }
->>>>>>> bc66eeadab30b6415a427ebb594d2e5f77805c2c
 
 .box {
   float: left;
@@ -59,14 +57,13 @@ footer {
   border: 1px solid gray;
   background-color: lightgray;
   padding: 11px; }
+
   .box:last-child {
     margin-right: 0; }
-<<<<<<< HEAD
 
 .news {
   border-bottom: 1px solid gray; }
-=======
->>>>>>> bc66eeadab30b6415a427ebb594d2e5f77805c2c
+
 
 .special {
   border-bottom: 1px solid gray; }
@@ -113,8 +110,9 @@ footer {
   display: block;
   margin-right: 2.35765%;
   width: 74.41059%; }
-  .menu:last-child {
-    margin-right: 0; }
+
+.menus:last-child {
+  margin-right: 0; }
 
 .buttonRow {
   position: relative;
@@ -150,38 +148,59 @@ footer {
 #reservation {
   position: absolute;
   margin: 20px 0; }
-  #reservation input {
-    display: block;
-    height: 35px;
-    padding: 5px;
-    outline: none;
-    border: 1px solid lightgray;
-    border-radius: 3px; }
-    #reservation input:focus {
-      border: 1px solid black; }
-  #reservation #fullName {
-    width: 350px; }
-  #reservation #numGuests {
-    width: 50px; }
-  #reservation p {
-    margin: 15px 0 5px;
-    font-weight: 900; }
-  #reservation textarea, #reservation select {
-    display: block;
-    margin: 15px 0;
-    outline: none;
-    border: 1px solid lightgray; }
-    #reservation textarea:focus, #reservation select:focus {
-      border: 1px solid black; }
-  #reservation select {
-    height: 30px; }
-    #reservation select:focus {
-      border: 1px solid black; }
-  #reservation #reserveTable {
-    background-color: white;
-    color: black;
-    border: 1px solid black;
-    transition: all 0.3s ease; }
-    #reservation #reserveTable:hover {
-      background-color: black;
-      color: white; }
+
+#reservation input {
+  display: block;
+  height: 35px;
+  padding: 5px;
+  outline: none;
+  border: 1px solid lightgray;
+  border-radius: 3px; }
+
+#reservation input:focus {
+  border: 1px solid black; }
+
+#reservation #fullName {
+  width: 350px; }
+
+#reservation #numGuests {
+  width: 50px; }
+
+#reservation p {
+  margin: 15px 0 5px;
+  font-weight: 900; }
+
+#reservation textarea, #reservation select {
+  display: block;
+  margin: 15px 0;
+  outline: none;
+  border: 1px solid lightgray; }
+
+#reservation textarea:focus, #reservation select:focus {
+  border: 1px solid black; }
+
+#reservation select {
+  height: 30px; }
+
+#reservation select:focus {
+  border: 1px solid black; }
+
+#reservation #reserveTable {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  transition: all 0.3s ease; }
+
+#reservation #reserveTable:hover {
+  background-color: black;
+  color: white; }
+
+.item {
+  float: left;
+  border-bottom: 1px solid bottom; }
+
+.description {
+  clear: both; }
+
+.price {
+  float: right; }
