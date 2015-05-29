@@ -12,7 +12,15 @@
 
     <header>
       <h1>Logo</h1>
-      <div class="socialMedia"></div>
+      <div class="socialMedia">
+        <ul>Follow Us!</ul>
+        <li><img src='images/noun_40254_cc.svg' class= facebook></li>
+        <li><a href='https://www.facebook.com/'>FaceBook</a>/</li>
+        <li><img src='images/noun_20940.svg' class= twitter></li>
+        <li><a href='https://twitter.com/'>Twitter</a>/</li>
+        <li><img src='images/noun_38846_cc.svg' class= instagram></li>
+        <li><a href='https://instagram.com/'>Instagram</a></li>
+      </div>
     </header>
 
     <div class="jumbotron"></div>
@@ -78,7 +86,7 @@
 
     </section>
 
-    <section class="menu">
+    <section class="menus">
       <div class="buttonRow">
         <button class="menuButton" id="storyBtn">Our Story</button>
         <button class="menuButton activeButton" id="menuBtn">Menu</button>
@@ -106,6 +114,24 @@
 
       <div id="menu" class="menuSection">
 
+        <script type="text/template" id="menuContainerData">
+          <div class="menuContainer">
+            <h3> <%= title %> </h3>
+            <ul class="menuList"></ul>
+          </div>
+        </script>
+
+        <script type="text/template" id="menuData">
+          <li>
+            <div class="itemBorder">
+              <p class="price">$<%= price %></p>
+              <p class="item"><%= item %></p>
+            </div>
+            <p class="description"><%= description %></p>
+          </li>
+        </script>
+
+
       </div>
 
     </section>
@@ -120,7 +146,7 @@
     </aside>
 
     <footer>
-
+        &copy; 2015
     </footer>
 
   </div>
