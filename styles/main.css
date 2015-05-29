@@ -124,3 +124,15 @@ html {
 #reservation #reserveTable:hover {
   background-color: black;
   color: white; }
+
+.foodPics {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 18.96686%;
+  background-color: red;
+  float: right;
+  margin: 40px 0; }
+
+.foodPics:last-child {
+  margin-right: 0; }

@@ -1,0 +1,6 @@
+.foodPics {
+  @include span-columns(2.5);
+  background-color: red;
+  float: right;
+  margin: 40px 0;
+}

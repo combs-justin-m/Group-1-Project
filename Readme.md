@@ -7,7 +7,7 @@ The following students participated in this project.
 * Christian Bustamante - https://github.com/chrisbusta
 * Ho Yeol (Danny) Yi - https://github.com/hdannyyi
 
-## We used three API's to create this site
+## We used three APIs to create this site
 
 1. Flickr's [Photo API](https://www.flickr.com/services/api/)
 2. Google Maps [Embed API](https://developers.google.com/maps/documentation/embed/)
