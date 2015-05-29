@@ -216,27 +216,136 @@ li {
   width: 100%; }
 
 .itemInfoRow {
-  line-height: 70px;
   padding: 0; }
 
 .itemInfoRow li {
   float: left;
-  margin: 0 0 0 10px; }
+  margin: 25px 0 0 10px; }
 
-.allergies, .favorite, .spicy, .vegan {
+.allergies {
   position: relative;
   height: 20px;
   width: 20px;
-  background-color: red; }
+  color: transparent;
+  background-image: url(../images/noun_exclaim.svg);
+  background-size: cover; }
+
+.allergies:after {
+  content: "Allergy Info: This item may contain shellfish or another item that some people may be allergic to. Please ask your waiter or waitress for assistance.";
+  color: black;
+  font-size: 13px;
+  width: 300px;
+  padding: 8px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  visibility: hidden;
+  background-color: lightgray;
+  border: 1px solid black;
+  border-radius: 3px; }
+
+.allergies:hover {
+  border: 1px solid black;
+  border-radius: 3px;
+  cursor: pointer; }
+
+.allergies:hover:after {
+  visibility: visible;
+  cursor: pointer; }
 
 .favorite {
-  background-color: yellow; }
+  position: relative;
+  height: 20px;
+  width: 20px;
+  color: transparent;
+  background-image: url(../images/noun_star.svg);
+  background-size: cover; }
+
+.favorite:after {
+  content: "We have been doing this a long time and this item has become one of our favorites.";
+  color: black;
+  font-size: 13px;
+  width: 300px;
+  padding: 8px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  visibility: hidden;
+  background-color: lightgray;
+  border: 1px solid black;
+  border-radius: 3px; }
+
+.favorite:hover {
+  border: 1px solid black;
+  border-radius: 3px;
+  cursor: pointer; }
+
+.favorite:hover:after {
+  visibility: visible;
+  cursor: pointer; }
 
 .spicy {
-  background-color: orange; }
+  position: relative;
+  height: 20px;
+  width: 20px;
+  color: transparent;
+  background-image: url(../images/noun_spice_cc.svg);
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.spicy:after {
+  content: "This item is spicy, please handle with care and drink lots of water.";
+  color: black;
+  font-size: 13px;
+  width: 300px;
+  padding: 8px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  visibility: hidden;
+  background-color: lightgray;
+  border: 1px solid black;
+  border-radius: 3px; }
+
+.spicy:hover {
+  border: 1px solid black;
+  border-radius: 3px;
+  cursor: pointer; }
+
+.spicy:hover:after {
+  visibility: visible;
+  cursor: pointer; }
 
 .vegan {
-  background-color: black; }
+  position: relative;
+  height: 20px;
+  width: 20px;
+  color: transparent;
+  background-image: url(../images/noun_v_cc.svg);
+  background-size: cover; }
+
+.vegan:after {
+  content: "This item contains no meat and has been prepared without the use of animal products.";
+  color: black;
+  font-size: 13px;
+  width: 300px;
+  padding: 8px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  visibility: hidden;
+  background-color: lightgray;
+  border: 1px solid black;
+  border-radius: 3px; }
+
+.vegan:hover {
+  border: 1px solid black;
+  border-radius: 3px;
+  cursor: pointer; }
+
+.vegan:hover:after {
+  visibility: visible;
+  cursor: pointer; }
 
 footer {
   border-top: 1px solid black;

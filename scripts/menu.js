@@ -36,10 +36,11 @@ menuFunc = _.template(menuString);
 
       $menuContainer.find('.menuList').append(menuFunc(a));
 
-      $(".itemInfo").remove( ":contains('0')" );
-
     });
 
     $('#menu').append($menuContainer);
+
+    $(".itemInfo").remove( ":contains('0')" );
+
   });
 });
