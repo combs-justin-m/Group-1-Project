@@ -41,7 +41,7 @@
 
 #reservation {
   position: absolute;
-  margin: 20px 0;
+  margin: 0;
 
   input {
     display: block;
@@ -108,14 +108,16 @@
 
 .item {
   display: inline-block;
-  margin: 0;
+  margin: 10px 0 0;
 }
 
 .description {
   clear: both;
+  font-size: 13px;
+  padding-right: 20px;
   width: 80%;
-  font-size: 12px;
-  height: 80px;
+  height: 45px;
+  float: left;
   border-right: 1px solid lightgray;
 }
 
@@ -124,3 +126,161 @@
   float: right;
   margin: 0;
 }
+<<<<<<< HEAD
+
+.itemInfoContainer {
+  display: inline-block;
+  width: 100%;
+}
+
+.itemInfoRow {
+  padding: 0;
+
+  li {
+    float: left;
+    margin: 25px 0 0 10px;
+  }
+}
+
+.allergies {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  color: transparent;
+  background-image: url(../images/noun_exclaim.svg);
+  background-size: cover;
+
+  &:after {
+    content: "Allergy Info: This item may contain shellfish or another item that some people may be allergic to. Please ask your waiter or waitress for assistance.";
+    color: black;
+    font-size: 13px;
+    width: 300px;
+    padding: 8px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    visibility: hidden;
+    background-color: lightgray;
+    border: 1px solid black;
+    border-radius: 3px;
+  }
+
+  &:hover {
+    border: 1px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  &:hover:after {
+    visibility: visible;
+    cursor: pointer;
+  }
+}
+
+.favorite {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  color: transparent;
+  background-image: url(../images/noun_star.svg);
+  background-size: cover;
+
+  &:after {
+    content: "We have been doing this a long time and this item has become one of our favorites.";
+    color: black;
+    font-size: 13px;
+    width: 300px;
+    padding: 8px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    visibility: hidden;
+    background-color: lightgray;
+    border: 1px solid black;
+    border-radius: 3px;
+  }
+
+  &:hover {
+    border: 1px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  &:hover:after {
+    visibility: visible;
+    cursor: pointer;
+  }
+}
+
+.spicy {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  color: transparent;
+  background-image: url(../images/noun_spice_cc.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  &:after {
+    content: "This item is spicy, please handle with care and drink lots of water.";
+    color: black;
+    font-size: 13px;
+    width: 300px;
+    padding: 8px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    visibility: hidden;
+    background-color: lightgray;
+    border: 1px solid black;
+    border-radius: 3px;
+  }
+
+  &:hover {
+    border: 1px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  &:hover:after {
+    visibility: visible;
+    cursor: pointer;
+  }
+}
+
+.vegan {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  color: transparent;
+  background-image: url(../images/noun_v_cc.svg);
+  background-size: cover;
+
+  &:after {
+    content: "This item contains no meat and has been prepared without the use of animal products.";
+    color: black;
+    font-size: 13px;
+    width: 300px;
+    padding: 8px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    visibility: hidden;
+    background-color: lightgray;
+    border: 1px solid black;
+    border-radius: 3px;
+  }
+
+  &:hover {
+    border: 1px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  &:hover:after {
+    visibility: visible;
+    cursor: pointer;
+  }
+}
+=======
+>>>>>>> bf507255b44fcddb21aa8bf9573e6991f4b7fa0d

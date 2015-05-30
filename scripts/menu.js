@@ -33,9 +33,14 @@ menuFunc = _.template(menuString);
     var $menuContainer = $(menuContainerFunc({title: key}));
 
     _.each(arr, function(a){
+
       $menuContainer.find('.menuList').append(menuFunc(a));
+
     });
 
     $('#menu').append($menuContainer);
+
+    $(".itemInfo").remove( ":contains('0')" );
+
   });
 });
