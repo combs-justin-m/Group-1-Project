@@ -1,60 +1,34 @@
 .box {
   @include span-columns(4);
+  margin-top: 15px;
   border: 1px solid gray;
-  background-color: lightgray;
+  height: 260px;
+  background-color: light gray;
   padding: 11px;
+  overflow: hidden;
+
+  h3 {
+    border-bottom: 1px solid gray;
+  }
 }
 
-.news {
-  border-bottom: 1px solid gray;
+#newsContainer {
+
+  p {
+    display: block;
+    display: -webkit-box;
+    max-width: 100%;
+    height: 140px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 1;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 
-.special {
-  border-bottom: 1px solid gray;
+.ourLocation span {
+  text-align: center;
 }
-
-.location {
-  border-bottom: 1px solid gray;
-}
-
-.box1 h3 {
-   margin-left: 10px;
-}
-.box1 p {
-   margin-left: 10px;
-}
-
-.box2 h3 {
-  margin-left: 10px;
-}
-.box2 p {
-  margin-left: 10px;
-}
-
-.box3 h3 {
-  margin-left: 10px;
-}
-
-.box1 h4 {
-  display: inline-block;
-  padding-top: 12px;
-  margin-left: 10px;
-}
-
-.box2 h4 {
-  margin-left: 10px;
-}
-
-.date {
-  float: right;
-}
-
-.box2 img {
-  padding-top: 14px;
-  margin-left: 10px;
-}
-.box3 img {
-  padding-top: 14px;
-  margin-left: 10px;
-}
-

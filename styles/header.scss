@@ -2,6 +2,10 @@ header {
   border-bottom: 1px solid black;
 }
 
+.monkLogo {
+  width: 150px;
+}
+
 h1 {
   display: inline-block;
 }
@@ -35,3 +39,7 @@ li {
   height: 20px;
 }
 
+.jumbotron {
+  margin-right: auto;
+  margin-left: auto;
+}
