@@ -9,7 +9,8 @@ html {
 .bodyContainer {
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  background-color: #E5E7E4; }
 
 .bodyContainer::after {
   clear: both;
@@ -57,9 +58,9 @@ li {
   width: 20px;
   height: 20px; }
 
-.jumbotron {
-  margin-right: auto;
-  margin-left: auto; }
+.jumbotron img {
+  display: block;
+  margin: 10px auto; }
 
 .box {
   float: left;
@@ -341,12 +342,15 @@ li {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 23.23176%;
-  background-color: red;
+  width: 18.96686%;
   float: right; }
 
 .foodPics:last-child {
   margin-right: 0; }
+
+.foodPics img {
+  width: 200px;
+  margin-bottom: 10px; }
 
 footer {
   border-top: 1px solid black;
