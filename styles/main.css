@@ -16,6 +16,15 @@ html {
   content: "";
   display: table; }
 
+.menus {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%; }
+
+.menus:last-child {
+  margin-right: 0; }
+
 header {
   border-bottom: 1px solid black; }
 
@@ -85,15 +94,6 @@ li {
 
 .ourLocation span {
   text-align: center; }
-
-.menus {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 74.41059%; }
-
-.menus:last-child {
-  margin-right: 0; }
 
 .buttonRow {
   position: relative;
@@ -176,12 +176,16 @@ li {
   background-color: black;
   color: white; }
 
+.menuTitle {
+  border-bottom: 1px solid black; }
+
 .itemBorder {
   border-bottom: 1px dotted black; }
 
 .item {
   display: inline-block;
-  margin: 10px 0 0; }
+  margin: 10px 0 0;
+  font-weight: 700; }
 
 .description {
   clear: both;
