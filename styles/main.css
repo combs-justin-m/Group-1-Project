@@ -6,6 +6,12 @@ html {
 *::before {
   box-sizing: inherit; }
 
+/************
+Variables
+*************/
+/************
+Layout
+*************/
 .bodyContainer {
   max-width: 68em;
   margin-left: auto;
@@ -27,39 +33,50 @@ html {
   margin-right: 0; }
 
 header {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+
+header::after {
+  clear: both;
+  content: "";
+  display: table; }
+
+header {
   border-bottom: 1px solid black; }
 
 .monkLogo {
-  width: 150px; }
+  width: 100px;
+  margin: 10px 10px 0 10px; }
 
 h1 {
-  display: inline-block; }
+  display: inline-block;
+  margin: 10px; }
 
 li {
   list-style: none; }
 
+li a:visited {
+  color: black; }
+
 .socialMedia {
   display: inline-block;
   text-align: center;
+  margin-top: 20px;
+  margin-right: 10px;
   float: right; }
 
 .socialMedia li {
-  float: left; }
+  float: left;
+  padding-left: 10px; }
 
-.facebook {
-  width: 20px;
-  height: 20px; }
-
-.twitter {
-  width: 20px;
-  height: 20px; }
-
-.instagram {
+.facebook, .twitter, .instagram {
   width: 20px;
   height: 20px; }
 
 .jumbotron img {
   display: block;
+  width: 100%;
   margin: 10px auto; }
 
 .box {

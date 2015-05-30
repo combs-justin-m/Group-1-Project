@@ -1,3 +1,13 @@
+/************
+Variables
+*************/
+
+$orange: #f06322;
+
+/************
+Layout
+*************/
+
 .bodyContainer {
   @include outer-container;
   background-color: #E5E7E4;
@@ -5,4 +15,8 @@
 
 .menus {
   @include span-columns(9);
+}
+
+header {
+  @include outer-container;
 }

@@ -3,25 +3,34 @@ header {
 }
 
 .monkLogo {
-  width: 150px;
+  width: 100px;
+  margin: 10px 10px 0 10px;
 }
 
 h1 {
   display: inline-block;
+  margin: 10px;
 }
 
 li {
   list-style: none;
+
+  a:visited {
+    color: black;
+  }
 }
 
 .socialMedia {
   display: inline-block;
   text-align: center;
+  margin-top: 20px;
+  margin-right: 10px;
   float: right;
 }
 
 .socialMedia li {
   float: left;
+  padding-left: 10px;
 }
 
 .facebook {
@@ -30,16 +39,15 @@ li {
 }
 
 .twitter {
-  width: 20px;
-  height: 20px;
+  @extend .facebook
 }
 
 .instagram {
-  width: 20px;
-  height: 20px;
+  @extend .facebook
 }
 
 .jumbotron img {
   display: block;
+  width: 100%;
   margin: 10px auto
 }
