@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>The Ginger Monk</title>
+  <!-- <title>The Ginger Monk</title> -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/vendor/normalize.css">
   <link rel="stylesheet" href="styles/main.css">
@@ -23,6 +23,7 @@
 
     <div class="jumbotron"></div>
 
+
     <section class="info">
       <ul class="box latestNews">
         <h3>Latest News</h3>
@@ -37,7 +38,9 @@
       <ul class="box todaysSpecial">
         <h3>Today's Special</h3>
 
-        <img src="http://lorempixel.com/280/100">
+        <script type="text/template" class="todaysspecpic">
+          <img src=<%=url_m%> />
+        </script>
 
         <div id="dailySpecContainer"></div>
           <script type="text/template" id="dailySpecial">
@@ -118,10 +121,8 @@
 
     <aside class="foodPics">
 
-      <ul class="container"></ul>
-        <script type="text/template" id="repos">
-          <li><img src="<%= avatar_url %>"></li>
-        </script>
+      <ul id="foodContainer"></ul>
+
 
     </aside>
 

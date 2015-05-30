@@ -48,6 +48,10 @@ li {
   width: 20px;
   height: 20px; }
 
+.jumbotron {
+  margin-right: auto;
+  margin-left: auto; }
+
 .box {
   float: left;
   display: block;
@@ -63,6 +67,9 @@ li {
 .box:last-child {
   margin-right: 0; }
 
+.box h3 {
+  border-bottom: 1px solid gray; }
+
 #newsContainer p {
   display: block;
   display: -webkit-box;
@@ -75,6 +82,9 @@ li {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis; }
+
+.ourLocation span {
+  text-align: center; }
 
 .menus {
   float: left;
@@ -181,16 +191,17 @@ li {
   border-right: 1px solid lightgray; }
 
 .price {
-  float: right; }
+  display: inline-block;
+  float: right;
+  margin: 0; }
 
 .foodPics {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 18.96686%;
+  width: 23.23176%;
   background-color: red;
-  float: right;
-  margin: 40px 0; }
+  float: right; }
 
 .foodPics:last-child {
   margin-right: 0; }
