@@ -23,9 +23,9 @@ getDailySpecial.done(function (data) {
 $.getJSON('http://private-anon-161c10f24-restaurantapi.apiary-mock.com/menu-1', function(menuItem) {
   menuItem.entrees.forEach(function (dish) {
     if (dish.id == specialId) {
-      console.log(dish.item + "," + dish.price + "," + dish.description);
-      $('#dailySpecContainer').append('<span><b>' + dish.item + '</b></span><span>' + dish.price +
-        '</span><span>' + dish.description + '</span>');
+
+      $('#dailySpecContainer').append('<div class="itemBorder">' + '<p class="item"><b>' + dish.item + '</b></p><p class="price">' + dish.price +
+        '</p>' + '</div>' + '<p class="specialDescription">' + dish.description + '</p>');
     }
   });
 });
