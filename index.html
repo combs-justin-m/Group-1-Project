@@ -15,9 +15,9 @@
       <h1>The Ginger Monk</h1>
       <div class="socialMedia">
         <ul>Follow Us!</ul>
-        <li><a href='https://www.facebook.com/'><img src='images/noun_40254_cc.svg' class= "facebook">Facebook</a></li>
-        <li><a href='https://twitter.com/'><img src='images/noun_20940.svg' class="twitter">Twitter</a></li>
-        <li><a href='https://instagram.com/'><img src='images/noun_38846_cc.svg' class= "instagram">Instagram</a></li>
+        <li><a href='https://www.facebook.com/'><img src='images/noun_40254_cc.svg' class= "facebook"></a></li>
+        <li><a href='https://twitter.com/'><img src='images/noun_20940.svg' class="twitter"></a></li>
+        <li><a href='https://instagram.com/'><img src='images/noun_38846_cc.svg' class= "instagram"></a></li>
       </div>
     </header>
 
@@ -25,7 +25,7 @@
 
 
     <section class="info">
-      <ul class="box latestNews">
+      <article class="box latestNews">
         <h3>Latest News</h3>
 
         <div id="newsContainer"></div>
@@ -33,18 +33,18 @@
             <span><b><%= title %></span></b> <span><b><%= date_published %></span></b>
             <p> <%= post %></p>
           </script>
-      </ul>
+      </article>
 
-      <ul class="box todaysSpecial">
+      <article class="box todaysSpecial">
         <h3>Today's Special</h3>
 
         <div id="dailySpecPic"></div>
 
         <div id="dailySpecContainer"></div>
 
-      </ul>
+      </article>
 
-      <ul class="box ourLocation">
+      <article class="box ourLocation">
         <h3>Our Location</h3>
 
         <iframe
@@ -57,14 +57,16 @@
           &attribution_ios_deep_link_id=comgooglemaps://?daddr=The+Iron+Yard+Atlanta+GA">
         </iframe>
 
-        <span id="streetaddress">115 M.L.K. Jr Dr NW, Atlanta, GA 30303</span>
-        <span id="phone">404-123-4567</span>
-        <a href="https://www.google.com/maps/place/115+Martin+Luther+King+Junior+Drive+Northwest,+Atlanta,+GA+30303">Map</a>
-        <a href="https://www.google.com/maps/dir/Current+Location/115+Martin+Luther+King+Junior+Drive+Northwest,+Atlanta,+GA+30303">Directions</a>
-      </ul>
+        <p id="streetaddress">115 M.L.K. Jr Dr NW, Atlanta, GA 30303</p>
+        <ul>
+          <li><p id="phone">404-123-4567</p></li>
+          <li><a href="https://www.google.com/maps/place/115+Martin+Luther+King+Junior+Drive+Northwest,+Atlanta,+GA+30303">Map</a></li>
+          <li><a href="https://www.google.com/maps/dir/Current+Location/115+Martin+Luther+King+Junior+Drive+Northwest,+Atlanta,+GA+30303">Directions</a></li>
+        </ul>
+      </article>
     </section>
 
-    <section class="menus">
+    <main class="menus">
       <div class="buttonRow">
         <button class="menuButton" id="storyBtn">Our Story</button>
         <button class="menuButton activeButton" id="menuBtn">Menu</button>
@@ -118,7 +120,7 @@
         </script>
 
       </div>
-    </section>
+    </main>
 
     <aside class="foodPics">
 

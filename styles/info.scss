@@ -34,6 +34,23 @@
   margin: 10px auto
 }
 
-.ourLocation span {
-  text-align: center;
+.ourLocation {
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    list-style-type: circle;
+    margin-left: 22px;
+    float: left;
+  }
+}
+
+#streetaddress {
+  margin: 15px 0;
+}
+
+#phone {
+  margin: 0;
 }

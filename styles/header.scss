@@ -26,16 +26,20 @@ li {
   margin-top: 20px;
   margin-right: 10px;
   float: right;
-}
 
-.socialMedia li {
-  float: left;
-  padding-left: 10px;
+  ul {
+    padding: 0;
+  }
+
+  li {
+    float: left;
+    padding-left: 10px;
+  }
 }
 
 .facebook {
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
 }
 
 .twitter {

@@ -15,8 +15,7 @@ Layout
 .bodyContainer {
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto;
-  background-color: #E5E7E4; }
+  margin-right: auto; }
 
 .bodyContainer::after {
   clear: both;
@@ -66,13 +65,16 @@ li a:visited {
   margin-right: 10px;
   float: right; }
 
+.socialMedia ul {
+  padding: 0; }
+
 .socialMedia li {
   float: left;
   padding-left: 10px; }
 
 .facebook, .twitter, .instagram {
-  width: 20px;
-  height: 20px; }
+  width: 40px;
+  height: 40px; }
 
 .jumbotron img {
   display: block;
@@ -114,8 +116,19 @@ li a:visited {
   display: block;
   margin: 10px auto; }
 
-.ourLocation span {
-  text-align: center; }
+.ourLocation ul {
+  padding: 0; }
+
+.ourLocation li {
+  list-style-type: circle;
+  margin-left: 22px;
+  float: left; }
+
+#streetaddress {
+  margin: 15px 0; }
+
+#phone {
+  margin: 0; }
 
 .buttonRow {
   position: relative;
@@ -221,7 +234,7 @@ li a:visited {
 .price {
   display: inline-block;
   float: right;
-  margin: 0; }
+  margin: 10px 0 0; }
 
 .itemInfoContainer {
   display: inline-block;
@@ -364,7 +377,8 @@ li a:visited {
   display: block;
   margin-right: 2.35765%;
   width: 18.96686%;
-  float: right; }
+  float: right;
+  margin-top: 80px; }
 
 .foodPics:last-child {
   margin-right: 0; }
