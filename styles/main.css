@@ -105,7 +105,30 @@ li a:visited {
   padding-bottom: 10px;
   text-align: left; }
 
-#newsContainer p {
+.latestNews {
+  position: relative; }
+
+.readmore {
+  position: absolute;
+  margin: 0;
+  right: 5px;
+  bottom: 0;
+  color: blue; }
+
+.readmore:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: darkblue; }
+
+#newsContainer h4 {
+  float: left;
+  margin: 10px 0; }
+
+#newsContainer h5 {
+  margin: 10px 0;
+  float: right; }
+
+.newsPost {
   display: block;
   display: -webkit-box;
   max-width: 100%;
@@ -119,13 +142,10 @@ li a:visited {
   text-overflow: ellipsis;
   clear: both; }
 
-#newsContainer h4 {
-  float: left;
-  margin: 10px 0; }
-
-#newsContainer h5 {
-  margin: 10px 0;
-  float: right; }
+.showPost {
+  text-overflow: inherit;
+  overflow: scroll;
+  min-height: 160px; }
 
 .specialDescription {
   font-size: 14px;

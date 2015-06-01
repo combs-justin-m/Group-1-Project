@@ -93,3 +93,10 @@ $.getJSON(foodPicsUrl, function(data) {
       serverID + "/" + picID + '_' + secret + '.jpg"></li>');
   });
 });
+
+// Read More //
+
+$('.readmore').on('click', function(){
+  $('.readmore').remove();
+  $('.newsPost').addClass('showPost');
+});
