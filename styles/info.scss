@@ -2,7 +2,7 @@
   @include span-columns(4);
   margin-top: 40px;
   border: 1px solid lightgray;
-  height: 260px;
+  height: 270px;
   padding: 10px;
   overflow: hidden;
   background-color: $white;
@@ -24,12 +24,12 @@
   margin: 0;
   right: 20px;
   bottom: 3px;
-  color: blue;
+  color: $orange;
 
   &:hover{
     cursor: pointer;
     text-decoration: underline;
-    color: darkblue;
+    color: firebrick;
   }
 }
 
@@ -88,7 +88,7 @@
 
   li {
     list-style-type: circle;
-    margin-left: 22px;
+    margin-left: 26px;
     float: left;
 
     &:first-child {

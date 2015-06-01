@@ -122,7 +122,7 @@ li a:visited {
   width: 31.76157%;
   margin-top: 40px;
   border: 1px solid lightgray;
-  height: 260px;
+  height: 270px;
   padding: 10px;
   overflow: hidden;
   background-color: #FFFFFF; }
@@ -144,12 +144,12 @@ li a:visited {
   margin: 0;
   right: 20px;
   bottom: 3px;
-  color: blue; }
+  color: #f06322; }
 
 .readmore:hover {
   cursor: pointer;
   text-decoration: underline;
-  color: darkblue; }
+  color: firebrick; }
 
 #newsContainer h4 {
   float: left;
@@ -196,7 +196,7 @@ li a:visited {
 
 .ourLocation li {
   list-style-type: circle;
-  margin-left: 22px;
+  margin-left: 26px;
   float: left; }
 
 .ourLocation li:first-child {
