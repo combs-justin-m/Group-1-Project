@@ -1,3 +1,4 @@
+@font-face {font-family:"Monk Gothic";src:url("../fonts/Monk-Gothic.eot?") format("eot"),url("../fonts/Monk-Gothic.woff") format("woff"),url("../fonts/Monk-Gothic.ttf") format("truetype"),url("../fonts/Monk-Gothic.svg#Monk-Gothic") format("svg");font-weight:normal;font-style:normal;}
 
 .monkLogo {
   width: 100px;
@@ -7,14 +8,14 @@
 h1 {
   display: inline-block;
   margin: 10px;
-  font-family: 'Goblin One', cursive;
-  font-size: 50px;
+  font-size: 60px;
   vertical-align: middle;
   margin-top: -50px;
 }
 
 #ginger {
   color: $orange;
+  font-family: "Monk Gothic";
 }
 
 li {

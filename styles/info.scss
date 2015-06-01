@@ -1,11 +1,12 @@
 .box {
   @include span-columns(4);
-  margin-top: 15px;
+  margin-top: 40px;
   border: 1px solid gray;
   height: 260px;
   background-color: light gray;
   padding: 10px;
   overflow: hidden;
+  background-color: $white;
 
   h3 {
     border-bottom: 1px solid gray;
