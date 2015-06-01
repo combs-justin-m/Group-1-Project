@@ -1,14 +1,23 @@
 @font-face {font-family:"Monk Gothic";src:url("../fonts/Monk-Gothic.eot?") format("eot"),url("../fonts/Monk-Gothic.woff") format("woff"),url("../fonts/Monk-Gothic.ttf") format("truetype"),url("../fonts/Monk-Gothic.svg#Monk-Gothic") format("svg");font-weight:normal;font-style:normal;}
 
 .monkLogo {
-  width: 100px;
+  width: 72px;
   margin: 10px 10px 0 10px;
 }
 
 h1 {
   display: inline-block;
   margin: 10px;
+  font-size: 40px;
+  vertical-align: middle;
+  margin-top: -50px;
+}
+
+#monk {
+  color: $orange;
   font-family: "Monk Gothic";
+  font-size: 60px;
+  text-shadow: 1px 1px 0 black;
 }
 
 li {
@@ -22,12 +31,14 @@ li {
 .socialMedia {
   display: inline-block;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-right: 10px;
   float: right;
 
   ul {
     padding: 0;
+    margin-top: 0;
+    margin-bottom: 8px;
   }
 
   li {
