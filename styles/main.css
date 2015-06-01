@@ -121,8 +121,8 @@ li a:visited {
 .readmore {
   position: absolute;
   margin: 0;
-  right: 5px;
-  bottom: 0;
+  right: 20px;
+  bottom: 3px;
   color: blue; }
 
 .readmore:hover {
