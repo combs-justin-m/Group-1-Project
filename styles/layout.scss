@@ -3,10 +3,17 @@ Variables
 *************/
 
 $orange: #f06322;
+$tan: #EFEFEB;
+$gray: #888888;
+$white: #FFFFFF;
 
 /************
 Layout
 *************/
+
+body {
+  background-color: $tan;
+}
 
 .bodyContainer {
   @include outer-container;
