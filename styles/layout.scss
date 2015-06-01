@@ -10,7 +10,6 @@ Layout
 
 .bodyContainer {
   @include outer-container;
-  // background-color: #E5E7E4;
 }
 
 .menus {
@@ -18,5 +17,9 @@ Layout
 }
 
 header {
+  @include outer-container;
+}
+
+.footerContainer {
   @include outer-container;
 }

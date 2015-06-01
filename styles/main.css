@@ -41,6 +41,16 @@ header::after {
   content: "";
   display: table; }
 
+.footerContainer {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+
+.footerContainer::after {
+  clear: both;
+  content: "";
+  display: table; }
+
 .monkLogo {
   width: 100px;
   margin: 10px 10px 0 10px; }
@@ -434,7 +444,5 @@ li a:visited {
 
 footer {
   border-top: 1px solid black;
-  font-size: .8em;
   height: 50px;
-  line-height: 50px;
-  clear: both; }
+  line-height: 50px; }

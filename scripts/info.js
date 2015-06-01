@@ -11,24 +11,23 @@ getNews.done(function (data) {
 
 //Daily Special
 
-var getDailySpecial = $.getJSON('http://private-anon-161c10f24-restaurantapi.apiary-mock.com/menu/special');
-// var templateFuncDS = _.template($('#dailySpecial').html());
+// var getDailySpecial = $.getJSON('http://private-anon-161c10f24-restaurantapi.apiary-mock.com/menu/special');
 
-var specialId;
+// var specialId;
 
-getDailySpecial.done(function (data) {
-  specialId = data.menu_item_id;
-});
+// getDailySpecial.done(function (data) {
+//   specialId = data.menu_item_id;
+// });
 
-$.getJSON('http://private-anon-161c10f24-restaurantapi.apiary-mock.com/menu-1', function(menuItem) {
-  menuItem.entrees.forEach(function (dish) {
-    if (dish.id == specialId) {
+// $.getJSON('http://private-anon-161c10f24-restaurantapi.apiary-mock.com/menu-1', function(menuItem) {
+//   menuItem.entrees.forEach(function (dish) {
+//     if (dish.id == specialId) {
 
-      $('#dailySpecContainer').append('<div class="itemBorder">' + '<p class="item"><b>' + dish.item + '</b></p><p class="price">' + dish.price +
-        '</p>' + '</div>' + '<p class="specialDescription">' + dish.description + '</p>');
-    }
-  });
-});
+//       $('#dailySpecContainer').append('<div class="itemBorder">' + '<p class="item"><b>' + dish.item + '</b></p><p class="price">' + dish.price +
+//         '</p>' + '</div>' + '<p class="specialDescription">' + dish.description + '</p>');
+//     }
+//   });
+// });
 
 //Flickr
 

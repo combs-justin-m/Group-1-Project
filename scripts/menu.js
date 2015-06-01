@@ -20,7 +20,11 @@ $('#reserveTable').on('click', function (){
 // Menu-1 data //
 var menuString, menuFunc, menuContainerString, menuContainerFunc;
 
+
 $.getJSON('http://private-anon-f64b0c0cc-restaurantapi.apiary-mock.com/menu-1', function(data){
+
+  $.getJSON('http://private-anon-161c10f24-restaurantapi.apiary-mock.com/menu/special', function(data2){
+
 
 menuContainerString = $('#menuContainerData').html()
 menuString = $('#menuData').html();
@@ -28,19 +32,28 @@ menuString = $('#menuData').html();
 menuContainerFunc = _.template(menuContainerString);
 menuFunc = _.template(menuString);
 
-  _.each(data, function (arr, key){
 
-    var $menuContainer = $(menuContainerFunc({title: key}));
+  ////////////////
+    data.entrees.forEach(function (dish) {
+      if (dish.id == data2.menu_item_id) {
 
-    _.each(arr, function(a){
+        $('#dailySpecContainer').append('<div class="itemBorder">' + '<p class="item"><b>' + dish.item + '</b></p><p class="price">' + dish.price +
+          '</p>' + '</div>' + '<p class="specialDescription">' + dish.description + '</p>');
+      }
+    });
+  /////////////
 
-      $menuContainer.find('.menuList').append(menuFunc(a));
+    _.each(data, function (arr, key){
+
+      var $menuContainer = $(menuContainerFunc({title: key}));
+
+      _.each(arr, function(a){
+        $menuContainer.find('.menuList').append(menuFunc(a));
+      });
+
+      $('#menu').append($menuContainer);
+      $(".itemInfo").remove( ":contains('0')" );
 
     });
-
-    $('#menu').append($menuContainer);
-
-    $(".itemInfo").remove( ":contains('0')" );
-
-  });
+  })
 });
