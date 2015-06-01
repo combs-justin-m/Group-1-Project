@@ -42,21 +42,21 @@ function getFlickrLink(galleryID) {
 
 //Jumbotron
 
-var jumbotronPicsGallery = '72157651341370473';
-var jumbotronUrl = getFlickrLink(jumbotronPicsGallery);
+// var jumbotronPicsGallery = '72157651341370473';
+// var jumbotronUrl = getFlickrLink(jumbotronPicsGallery);
 
-$.getJSON(jumbotronUrl, function(data) {
+// $.getJSON(jumbotronUrl, function(data) {
 
-  $.each(data.photos.photo, function (i, elem) {
-    var farmID = elem.farm;
-    var serverID = elem.server;
-    var picID = elem.id;
-    var secret = elem.secret;
+//   $.each(data.photos.photo, function (i, elem) {
+//     var farmID = elem.farm;
+//     var serverID = elem.server;
+//     var picID = elem.id;
+//     var secret = elem.secret;
 
-    $(".jumbotron").append('<img src="https://farm' + farmID + '.staticflickr.com/' +
-      serverID + "/" + picID + '_' + secret + '.jpg">');
-  });
-});
+//     $(".jumbotron").append('<img src="https://farm' + farmID + '.staticflickr.com/' +
+//       serverID + "/" + picID + '_' + secret + '.jpg">');
+//   });
+// });
 
 //Daily Special
 

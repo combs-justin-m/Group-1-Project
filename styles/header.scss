@@ -1,6 +1,3 @@
-header {
-  border-bottom: 1px solid black;
-}
 
 .monkLogo {
   width: 100px;
@@ -48,6 +45,13 @@ li {
 
 .instagram {
   @extend .facebook
+}
+
+.jumbotron {
+  background-image: url(../images/jumbo.jpg);
+  background-size: cover;
+  height: 600px;
+  width: 100%;
 }
 
 .jumbotron img {
