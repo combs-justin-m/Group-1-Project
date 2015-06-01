@@ -110,9 +110,8 @@ li a:visited {
   margin-right: 2.35765%;
   width: 31.76157%;
   margin-top: 40px;
-  border: 1px solid gray;
+  border: 1px solid lightgray;
   height: 260px;
-  background-color: light gray;
   padding: 10px;
   overflow: hidden;
   background-color: #FFFFFF; }
@@ -150,6 +149,7 @@ li a:visited {
   float: right; }
 
 .newsPost {
+  color: #888888;
   display: block;
   display: -webkit-box;
   max-width: 100%;
@@ -169,6 +169,7 @@ li a:visited {
   min-height: 160px; }
 
 .specialDescription {
+  color: #888888;
   font-size: 14px;
   margin: 5px 0; }
 
@@ -297,7 +298,7 @@ li a:visited {
 
 .menuTitle {
   margin: 0;
-  border-bottom: 1px solid black; }
+  border-bottom: 2px solid #f06322; }
 
 .itemBorder {
   border-bottom: 1px dotted black; }
@@ -356,7 +357,7 @@ li a:visited {
   border-radius: 3px; }
 
 .allergies:hover {
-  border: 1px solid black;
+  border: 1px solid #f06322;
   border-radius: 3px;
   cursor: pointer; }
 
@@ -387,7 +388,7 @@ li a:visited {
   border-radius: 3px; }
 
 .favorite:hover {
-  border: 1px solid black;
+  border: 1px solid #f06322;
   border-radius: 3px;
   cursor: pointer; }
 
@@ -419,7 +420,7 @@ li a:visited {
   border-radius: 3px; }
 
 .spicy:hover {
-  border: 1px solid black;
+  border: 1px solid #f06322;
   border-radius: 3px;
   cursor: pointer; }
 
@@ -450,7 +451,7 @@ li a:visited {
   border-radius: 3px; }
 
 .vegan:hover {
-  border: 1px solid black;
+  border: 1px solid #f06322;
   border-radius: 3px;
   cursor: pointer; }
 
@@ -464,7 +465,7 @@ li a:visited {
   margin-right: 2.35765%;
   width: 18.96686%;
   float: right;
-  margin-top: 80px; }
+  margin-top: 84px; }
 
 .foodPics:last-child {
   margin-right: 0; }

@@ -1,9 +1,8 @@
 .box {
   @include span-columns(4);
   margin-top: 40px;
-  border: 1px solid gray;
+  border: 1px solid lightgray;
   height: 260px;
-  background-color: light gray;
   padding: 10px;
   overflow: hidden;
   background-color: $white;
@@ -48,6 +47,7 @@
 }
 
 .newsPost {
+  color: $gray;
     display: block;
     display: -webkit-box;
     max-width: 100%;
@@ -69,6 +69,7 @@
 }
 
 .specialDescription {
+  color: $gray;
   font-size: 14px;
   margin: 5px 0;
 }
