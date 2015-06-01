@@ -4,11 +4,14 @@
   border: 1px solid gray;
   height: 260px;
   background-color: light gray;
-  padding: 11px;
+  padding: 10px;
   overflow: hidden;
 
   h3 {
     border-bottom: 1px solid gray;
+    margin: 10px 0;
+    padding-bottom: 10px;
+    text-align: left;
   }
 }
 
@@ -26,6 +29,17 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+    clear: both;
+  }
+
+  h4 {
+    float: left;
+    margin: 10px 0;
+  }
+
+  h5 {
+    margin: 10px 0;
+    float: right;
   }
 }
 
@@ -40,6 +54,7 @@
 }
 
 .ourLocation {
+  text-align: center;
 
   ul {
     padding: 0;
@@ -49,6 +64,10 @@
     list-style-type: circle;
     margin-left: 22px;
     float: left;
+
+    &:first-child {
+      list-style-type: none;
+    }
   }
 }
 

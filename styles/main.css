@@ -93,14 +93,17 @@ li a:visited {
   border: 1px solid gray;
   height: 260px;
   background-color: light gray;
-  padding: 11px;
+  padding: 10px;
   overflow: hidden; }
 
 .box:last-child {
   margin-right: 0; }
 
 .box h3 {
-  border-bottom: 1px solid gray; }
+  border-bottom: 1px solid gray;
+  margin: 10px 0;
+  padding-bottom: 10px;
+  text-align: left; }
 
 #newsContainer p {
   display: block;
@@ -113,7 +116,16 @@ li a:visited {
   -webkit-line-clamp: 10;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  text-overflow: ellipsis; }
+  text-overflow: ellipsis;
+  clear: both; }
+
+#newsContainer h4 {
+  float: left;
+  margin: 10px 0; }
+
+#newsContainer h5 {
+  margin: 10px 0;
+  float: right; }
 
 .specialDescription {
   font-size: 14px;
@@ -123,6 +135,9 @@ li a:visited {
   display: block;
   margin: 10px auto; }
 
+.ourLocation {
+  text-align: center; }
+
 .ourLocation ul {
   padding: 0; }
 
@@ -130,6 +145,9 @@ li a:visited {
   list-style-type: circle;
   margin-left: 22px;
   float: left; }
+
+.ourLocation li:first-child {
+  list-style-type: none; }
 
 #streetaddress {
   margin: 15px 0; }
