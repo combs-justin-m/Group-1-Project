@@ -72,7 +72,7 @@ li a:visited {
   width: 31.76157%;
   margin-top: 40px;
   border: 1px solid lightgray;
-  height: 270px;
+  min-height: 270px;
   padding: 10px;
   overflow: hidden;
   background-color: #FFFFFF; }
@@ -507,17 +507,12 @@ Layout
     margin-right: 2.35765%;
     width: 82.94039%;
     margin-left: 8.5298%;
-    min-height: 150px; }
+    min-height: 150px;
+    padding-bottom: 20px; }
   .box:last-child {
     margin-right: 0; }
   .foodPics {
     display: none; }
-  .item {
-    font-size: 3.5vw; }
-  .price {
-    font-size: 3.3vw;
-    float: none;
-    margin-left: 10px; }
   .menus {
     float: left;
     display: block;
@@ -556,5 +551,14 @@ Layout
   header .socialMedia {
     float: none;
     margin-top: 0; }
+  .item {
+    font-size: 3.5vw; }
+  .price {
+    font-size: 3.3vw;
+    float: none;
+    margin-left: 10px; }
+  .menuButton {
+    min-width: 60px;
+    font-size: 12px; }
   .footerContainer {
     margin-left: 15px; } }

@@ -37,20 +37,11 @@ Layout
     @include span-columns(10);
       @include shift(1);
     min-height: 150px;
+    padding-bottom: 20px;
   }
 
   .foodPics {
     display: none;
-  }
-
-  .item {
-    font-size: 3.5vw;
-  }
-
-  .price {
-    font-size: 3.3vw;
-    float: none;
-    margin-left: 10px;
   }
 
   .menus {
@@ -108,6 +99,21 @@ Layout
       float: none;
       margin-top: 0;
     }
+  }
+
+  .item {
+    font-size: 3.5vw;
+  }
+
+  .price {
+    font-size: 3.3vw;
+    float: none;
+    margin-left: 10px;
+  }
+
+  .menuButton {
+    min-width: 60px;
+    font-size: 12px;
   }
 
   .footerContainer {
