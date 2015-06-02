@@ -131,7 +131,7 @@ li a:visited {
   margin-right: 0; }
 
 .box h3 {
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid lightgray;
   margin: 10px 0;
   padding-bottom: 10px;
   text-align: left; }
@@ -222,7 +222,8 @@ li a:visited {
   width: 100%;
   height: 60px;
   margin: 40px 0 0;
-  border-bottom: 1px solid lightgray; }
+  top: 1px;
+  z-index: 100; }
 
 .menuButton {
   height: 60px;
@@ -245,30 +246,28 @@ li a:visited {
   width: 56.25%;
   margin: 0;
   background-color: #FFFFFF;
-  padding: 30px; }
+  padding: 30px;
+  border: 1px solid lightgray; }
 
 #menu {
   margin: 0;
   margin-bottom: 30px;
   clear: both;
   width: 100%;
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  border: 1px solid lightgray; }
 
 .menuContainer {
   padding: 30px;
   padding-bottom: 0; }
-
-.menuSection {
-  border-right: 1px solid lightgray;
-  border-left: 1px solid lightgray;
-  border-bottom: 1px solid lightgray; }
 
 #reservation {
   position: absolute;
   width: 56.25%;
   margin: 0;
   background-color: #FFFFFF;
-  padding: 30px; }
+  padding: 30px;
+  border: 1px solid lightgray; }
 
 #reservation input {
   display: block;
@@ -483,7 +482,7 @@ li a:visited {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 18.96686%;
+  width: 23.23176%;
   float: right;
   margin-top: 84px; }
 
@@ -491,10 +490,11 @@ li a:visited {
   margin-right: 0; }
 
 .foodPics img {
-  width: 200px;
-  margin-bottom: 10px; }
+  width: 250px;
+  margin-bottom: 25px;
+  border: 1px solid lightgray; }
 
 footer {
-  border-top: 1px solid black;
+  border-top: 1px solid lightgray;
   height: 50px;
   line-height: 50px; }
