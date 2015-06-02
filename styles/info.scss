@@ -104,3 +104,14 @@
 #phone {
   margin: 0;
 }
+
+.mapphone {
+  color: $orange;
+  text-decoration: none;
+
+  &:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: firebrick;
+  }
+}

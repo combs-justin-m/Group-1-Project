@@ -158,6 +158,15 @@ li a:visited {
 #phone {
   margin: 0; }
 
+.mapphone {
+  color: #f06322;
+  text-decoration: none; }
+
+.mapphone:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: firebrick; }
+
 .buttonRow {
   position: relative;
   width: 100%;
