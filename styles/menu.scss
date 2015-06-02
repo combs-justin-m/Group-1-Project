@@ -121,7 +121,7 @@
 
 .menuTitle {
   margin: 0;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid $orange;
 }
 
 .itemBorder {
@@ -189,7 +189,7 @@
   }
 
   &:hover {
-    border: 1px solid black;
+    border: 1px solid $orange;
     border-radius: 3px;
     cursor: pointer;
   }
@@ -224,7 +224,7 @@
   }
 
   &:hover {
-    border: 1px solid black;
+    border: 1px solid $orange;
     border-radius: 3px;
     cursor: pointer;
   }
@@ -260,7 +260,7 @@
   }
 
   &:hover {
-    border: 1px solid black;
+    border: 1px solid $orange;
     border-radius: 3px;
     cursor: pointer;
   }
@@ -295,7 +295,7 @@
   }
 
   &:hover {
-    border: 1px solid black;
+    border: 1px solid $orange;
     border-radius: 3px;
     cursor: pointer;
   }
