@@ -213,7 +213,8 @@ li a:visited {
   width: 100%;
   height: 60px;
   margin: 40px 0 0;
-  border-bottom: 1px solid lightgray; }
+  top: 1px;
+  z-index: 100; }
 
 .menuButton {
   height: 60px;
@@ -236,30 +237,28 @@ li a:visited {
   width: 56.25%;
   margin: 0;
   background-color: #FFFFFF;
-  padding: 30px; }
+  padding: 30px;
+  border: 1px solid lightgray; }
 
 #menu {
   margin: 0;
   margin-bottom: 30px;
   clear: both;
   width: 100%;
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  border: 1px solid lightgray; }
 
 .menuContainer {
   padding: 30px;
   padding-bottom: 0; }
-
-.menuSection {
-  border-right: 1px solid lightgray;
-  border-left: 1px solid lightgray;
-  border-bottom: 1px solid lightgray; }
 
 #reservation {
   position: absolute;
   width: 56.25%;
   margin: 0;
   background-color: #FFFFFF;
-  padding: 30px; }
+  padding: 30px;
+  border: 1px solid lightgray; }
 
 #reservation input {
   display: block;
