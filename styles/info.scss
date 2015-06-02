@@ -2,7 +2,7 @@
   @include span-columns(4);
   margin-top: 40px;
   border: 1px solid gray;
-  height: 260px;
+  height: 270px;
   background-color: light gray;
   padding: 10px;
   overflow: hidden;
@@ -25,12 +25,12 @@
   margin: 0;
   right: 20px;
   bottom: 3px;
-  color: blue;
+  color: $orange;
 
   &:hover{
     cursor: pointer;
     text-decoration: underline;
-    color: darkblue;
+    color: FireBrick;
   }
 }
 
@@ -102,4 +102,15 @@
 
 #phone {
   margin: 0;
+}
+
+.mapphone {
+  color: $orange;
+  text-decoration: none;
+
+  &:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: FireBrick;
+  }
 }
