@@ -20,10 +20,9 @@ $('#reserveTable').on('click', function (){
 // Menu-1 data //
 var menuString, menuFunc, menuContainerString, menuContainerFunc;
 
+$.getJSON('http://private-anon-d5db185d3-restaurantapi.apiary-mock.com/menu-1', function(data){
 
-$.getJSON('http://private-anon-f64b0c0cc-restaurantapi.apiary-mock.com/menu-1', function(data){
-
-  $.getJSON('http://private-anon-161c10f24-restaurantapi.apiary-mock.com/menu/special', function(data2){
+  $.getJSON('http://private-anon-d5db185d3-restaurantapi.apiary-mock.com/menu/special', function(data2){
 
 
 menuContainerString = $('#menuContainerData').html()
