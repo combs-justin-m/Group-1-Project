@@ -1,6 +1,6 @@
 //News
 
-var getNews = $.getJSON('http://private-anon-161c10f24-restaurantapi.apiary-mock.com/news/latest');
+var getNews = $.getJSON('http://private-anon-d5db185d3-restaurantapi.apiary-mock.com/news/latest');
 var templateFuncNews = _.template($('#news').html());
 
 var divNews = $('#newsContainer');
